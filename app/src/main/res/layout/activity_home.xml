@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFE6FF">
+
+    <ImageView
+        android:id="@+id/btnOpenDone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_done_all"
+        app:tint="#1E63B6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_circle"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_imge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:text="Hello, Emad"
+        android:textColor="#1E63B6"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgUser"
+        app:layout_constraintTop_toTopOf="@id/imgUser"
+        app:layout_constraintEnd_toStartOf="@id/btnOpenDone" />
+
+    <TextView
+        android:id="@+id/tvSub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:text="lets get organized"
+        android:textColor="#7A8797"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgUser"
+        app:layout_constraintTop_toBottomOf="@id/tvHello"
+        app:layout_constraintEnd_toStartOf="@id/btnOpenDone" />
+
+    <RelativeLayout
+        android:id="@+id/cardStudy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_white_card"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvStudyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study organizer"
+            android:textColor="#1E63B6"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStudyDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStudyTitle"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@id/imgStudy"
+            android:layout_marginEnd="12dp"
+            android:text="Add HomeWork or Exam to do"
+            android:textColor="#7A8797"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvStudyDesc"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btn_blue"
+            android:text="Add Task"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imgStudy"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/study_illustration" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHomeworkTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="18dp"
+        android:text="Homework"
+        android:textColor="#1E63B6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cardStudy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listHomework"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/tvExamTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHomeworkTitle" />
+
+    <TextView
+        android:id="@+id/tvExamTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="1dp"
+        android:text="Quiz"
+        android:textColor="#1E63B6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/listHomework"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listQuiz"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="24dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvExamTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

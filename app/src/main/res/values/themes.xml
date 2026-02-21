@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.StudyOrganizer" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#1E63B6</item>
+        <item name="colorPrimaryVariant">#1E63B6</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="android:windowBackground">#1E63B6</item>
+
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">#1E63B6</item>
+
+        <item name="android:statusBarColor">#1E63B6</item>
+
+    </style>
+</resources>
