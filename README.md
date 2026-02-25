@@ -1,4 +1,4 @@
-# Study Organizer App
+# AceIT App
 
 An Android application designed to help students organize their time and manage their study tasks, including homework and exams. The app aims to contribute to improving the educational environment for students in Gaza by making it easier to track their studies digitally and simply.
 
