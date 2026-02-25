@@ -1,17 +1,31 @@
-# AceItApp
+# Study Organizer App
 
-Welcome to AceItApp. I built this app to make keeping track of study tasks easier. Whether it's a quick homework assignment or a major exam, this app helps you organize everything in one place.
+An Android application designed to help students organize their time and manage their study tasks, including homework and exams. The app aims to contribute to improving the educational environment for students in Gaza by making it easier to track their studies digitally and simply.
 
-## Features
+## Key Features
+- Easily add, view, edit, and delete study tasks.
+- A dedicated section for completed tasks with filtering options (show all, exams only, or homework only).
+- A simple, card-based design for a comfortable and user-friendly experience.
+- Uses native system dialogs for selecting dates and times to make data entry easier.
 
-* **User Accounts:** Includes Login and Sign-Up screens to keep your tasks personal and secure.
-* **Task Categories:** Split your workload into specific types, like "Homework" or "Exam".
-* **Task Details:** Tap on any task to open a dedicated page showing the full details.
-* **Task Management:** Update task info, delete tasks, or mark them as "Done".
-* **Quick Add:** An "Add Task" button on the main screen to quickly add new tasks, details, and types.
-* **Done Tasks:** A dedicated section on the main screen that shows all your completed tasks.
+## Technologies Used
+- Programming Language: Java
+- UI Design: XML
+- Development Environment: Android Studio
 
-## Built With
+## App Screens
+The application consists of 8 main screens:
+1. Splash Screen.
+2. Login Screen.
+3. SignUp Screen.
+4. Home Screen (HomeActivity): Displays current homework and exams.
+5. Add Task Screen (AddTaskActivity).
+6. Task Details Screen (TaskDetailsActivity): Shows task details and allows deleting or marking the task as done.
+7. Update Task Screen (UpdateTaskActivity).
+8. Done Tasks Screen (DoneTasksActivity).
 
-* **Java**
-* **XML**
+## Developer
+Emad Jaber
+
+---
+**Note:** The internet was used to research and learn how to build and program the (Adapter) to bind data to the lists. Additionally, all the app icons, images, and illustrations used in this project were sourced from the internet.
