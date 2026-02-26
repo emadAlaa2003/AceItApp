@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#CFE6FF">
 
-    <!-- Header -->
+
     <LinearLayout
         android:id="@+id/headerAdd"
         android:layout_width="0dp"
@@ -35,7 +35,7 @@
             android:textColor="#1E73D8" />
     </LinearLayout>
 
-    <!-- Image -->
+
     <ImageView
         android:id="@+id/imgTop"
         android:layout_width="0dp"
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Subtitle -->
+
     <TextView
         android:id="@+id/tvAddSubTitle"
         android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Form Card -->
+
     <LinearLayout
         android:id="@+id/cardForm"
         android:layout_width="0dp"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Title -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                 android:textColorHint="#9AA3AF" />
         </LinearLayout>
 
-        <!-- Type -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
             </RadioGroup>
         </LinearLayout>
 
-        <!-- Subject -->
+    s
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -177,7 +177,6 @@
                 android:textColorHint="#9AA3AF" />
         </LinearLayout>
 
-        <!-- Date + Time -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -214,7 +213,7 @@
 
     </LinearLayout>
 
-    <!-- Add Button -->
+
     <Button
         android:id="@+id/btnAddTask"
         android:layout_width="0dp"

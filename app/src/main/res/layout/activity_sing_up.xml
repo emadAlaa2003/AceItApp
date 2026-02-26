@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
-    <!-- Container للحقول والزر -->
+
     <LinearLayout
         android:id="@+id/layoutForm"
         android:layout_width="wrap_content"
@@ -47,7 +47,6 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
-        <!-- Full name -->
         <RelativeLayout
             android:layout_width="320dp"
             android:layout_height="56dp"
@@ -76,7 +75,6 @@
                 android:padding="0dp" />
         </RelativeLayout>
 
-        <!-- Email -->
         <RelativeLayout
             android:layout_width="320dp"
             android:layout_height="56dp"
@@ -107,7 +105,6 @@
                 android:padding="0dp" />
         </RelativeLayout>
 
-        <!-- Password -->
         <RelativeLayout
             android:layout_width="320dp"
             android:layout_height="56dp"
@@ -148,7 +145,6 @@
                 android:padding="0dp" />
         </RelativeLayout>
 
-        <!-- زر Sign Up -->
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="320dp"

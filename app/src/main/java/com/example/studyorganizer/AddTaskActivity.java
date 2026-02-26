@@ -39,7 +39,7 @@ public class AddTaskActivity extends AppCompatActivity {
             return insets;
         });
 
-        // 1) ربط العناصر
+
         etTitle = findViewById(R.id.etTitle);
         etSubject = findViewById(R.id.etSubject);
         tvDate = findViewById(R.id.tvDate);

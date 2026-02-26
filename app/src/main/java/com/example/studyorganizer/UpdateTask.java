@@ -32,7 +32,7 @@ public class UpdateTask extends AppCompatActivity {
 
         initViews();
         getAndSetData();
-        setupClickListeners(); // ✅ ضفنا هاي الدالة عشان تشغل الازرار
+        setupClickListeners();
     }
 
     private void initViews() {
@@ -53,11 +53,10 @@ public class UpdateTask extends AppCompatActivity {
             etTitle.setText(i.getStringExtra("title"));
             etSubject.setText(i.getStringExtra("subject"));
 
-            // استقبال الوقت الكامل وفصله (مؤقتاً بنحط النص كامل في الوقت إذا بدك)
-            // أو بنعرض قيم افتراضية إذا كانت النصوص فاضية
+
             String fullTime = i.getStringExtra("time");
-            tvDate.setText("Select Date"); // قيمة افتراضية حتى يختار المستخدم
-            tvTime.setText(fullTime);      // بنعرض الوقت القديم هنا
+            tvDate.setText("Select Date");
+            tvTime.setText(fullTime);
 
             String type = i.getStringExtra("type");
             if (type != null && (type.equals("Homework") || type.equals("homework"))) {
@@ -68,12 +67,10 @@ public class UpdateTask extends AppCompatActivity {
         }
     }
 
-    // ✅ دالة جديدة لبرمجة الضغطات
+
     private void setupClickListeners() {
 
-        // 1. برمجة اختيار التاريخ
         tvDate.setOnClickListener(v -> {
-            // بنجيب التاريخ الحالي عشان يفتح عليه
             final Calendar c = Calendar.getInstance();
             int year = c.get(Calendar.YEAR);
             int month = c.get(Calendar.MONTH);

@@ -92,19 +92,19 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void setupClicks() {
-        // إضافة
+
         btnAdd.setOnClickListener(v -> {
             Intent i = new Intent(HomeActivity.this, AddTaskActivity.class);
             startActivityForResult(i, REQ_ADD_TASK);
         });
 
-        // فتح شاشة المنجزات
+
         btnOpenDone.setOnClickListener(v -> {
             Intent i = new Intent(HomeActivity.this, DoneTasksActivity.class);
             startActivity(i);
         });
 
-        // قوائم
+
         listHomework.setOnItemClickListener((parent, view, position, id) -> {
             Task selectedTask = homeworkList.get(position);
             openDetails(selectedTask, position);
