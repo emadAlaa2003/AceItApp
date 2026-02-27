@@ -100,8 +100,7 @@ public class TaskDetailsActivity extends AppCompatActivity {
         });
 
         btnEdit.setOnClickListener(v -> {
-            // انتبه: تأكد ان اسم الكلاس عندك UpdateTaskActivity مش UpdateTask
-            Intent i = new Intent(TaskDetailsActivity.this, UpdateTask.class);
+]            Intent i = new Intent(TaskDetailsActivity.this, UpdateTask.class);
             i.putExtra("title", tvTitle.getText().toString());
             i.putExtra("subject", tvSubject.getText().toString());
             i.putExtra("time", tvTime.getText().toString());
