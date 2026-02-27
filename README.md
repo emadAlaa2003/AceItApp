@@ -1,12 +1,12 @@
 # AceIT App
 
-An Android application designed to help students organize their time and manage their study tasks, including homework and exams. The app aims to contribute to improving the educational environment for students in Gaza by making it easier to track their studies digitally and simply.
+An Android application designed to help students organize their time and manage their study tasks, including homework and exams. 
 
 ## Key Features
 - Easily add, view, edit, and delete study tasks.
 - A dedicated section for completed tasks with filtering options (show all, exams only, or homework only).
 - A simple, card-based design for a comfortable and user-friendly experience.
-- Uses native system dialogs for selecting dates and times to make data entry easier.
+
 
 ## Technologies Used
 - Programming Language: Java
