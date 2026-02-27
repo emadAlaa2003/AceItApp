@@ -1,4 +1,4 @@
-# AceIT App
+# AceIT(Study Organizer) App
 
 An Android application designed to help students organize their time and manage their study tasks, including homework and exams. 
 
